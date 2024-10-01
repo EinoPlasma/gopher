@@ -4,16 +4,22 @@ export default function HomePage() {
   return (
     <main className="flex h-screen flex-col justify-center text-center">
       <h1 className="mb-4 text-2xl font-bold">Hello World</h1>
-      <p className="text-fd-muted-foreground">
-        You can open{' '}
-        <Link
-          href="/docs"
-          className="text-fd-foreground font-semibold underline"
-        >
-          /docs
-        </Link>{' '}
-        and see the documentation.
-      </p>
+      <div className='flex items-center justify-center space-x-10'>
+        <div>
+          <h1>
+            <Link href={"/docs/golang"}>
+              Golang Book
+            </Link>
+          </h1>
+        </div>
+        <div>
+          <h1>
+            <Link href={"/docs/office"}>
+              Office Book
+            </Link>
+          </h1>
+        </div>
+      </div>
     </main>
   );
 }
